@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.6.0)
+  - StravaSwift (0.7.0):
+    - Alamofire (~> 4)
+    - SwiftyJSON (~> 3)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - StravaSwift
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  StravaSwift: 1c98b90d969ff24a2e7254b1655b5860bedfab45
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 62ec74aa0dd6e43fa4449f871d69f2bb4c1a29f3
+
+COCOAPODS: 1.3.1

@@ -1,0 +1,8 @@
+use_frameworks!
+platform :ios, '11.2'
+
+project '../XCTeam.xcodeproj'
+
+target 'XCTeam' do
+  pod 'StravaSwift'
+end

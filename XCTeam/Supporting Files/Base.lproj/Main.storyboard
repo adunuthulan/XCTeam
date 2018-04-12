@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8MV-Sp-7lM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Athlete-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="AthleteViewController" customModule="XCTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yy7-dm-JhC">
+                                <rect key="frame" x="122" y="91" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yy7-dm-JhC" secondAttribute="height" multiplier="1:1" id="Deq-Tu-rCC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Athlete" image="first" selectedImage="first" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Runs-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="XCTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Runs" image="second" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Auth View Controller-->
+        <scene sceneID="yH4-jB-6ah">
+            <objects>
+                <viewController id="8MV-Sp-7lM" customClass="AuthViewController" customModule="XCTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ieF-oS-5hr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="shs" translatesAutoresizingMaskIntoConstraints="NO" id="9XY-ve-xYd">
+                                <rect key="frame" x="0.0" y="28" width="375" height="523"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9XY-ve-xYd" secondAttribute="height" multiplier="375:523" id="hB7-8S-nqX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8s-4d-KbA">
+                                <rect key="frame" x="102" y="596" width="171" height="31"/>
+                                <state key="normal" image="ConnectWithStrava"/>
+                                <connections>
+                                    <action selector="login:" destination="8MV-Sp-7lM" eventType="touchUpInside" id="W0j-N4-t30"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DLd-CK-MAp" firstAttribute="trailing" secondItem="B8s-4d-KbA" secondAttribute="trailing" constant="48" id="G1b-Ll-V5W"/>
+                            <constraint firstItem="B8s-4d-KbA" firstAttribute="top" secondItem="9XY-ve-xYd" secondAttribute="bottom" constant="45" id="JF9-Hc-BbF"/>
+                            <constraint firstItem="9XY-ve-xYd" firstAttribute="top" secondItem="DLd-CK-MAp" secondAttribute="top" constant="8" id="SEJ-PC-hgB"/>
+                            <constraint firstItem="B8s-4d-KbA" firstAttribute="leading" secondItem="DLd-CK-MAp" secondAttribute="leading" constant="102" id="ouc-Du-WVC"/>
+                            <constraint firstItem="DLd-CK-MAp" firstAttribute="bottom" secondItem="9XY-ve-xYd" secondAttribute="bottom" constant="116" id="quB-m7-GbY"/>
+                            <constraint firstItem="DLd-CK-MAp" firstAttribute="bottom" secondItem="B8s-4d-KbA" secondAttribute="bottom" constant="40" id="ziV-ck-avh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DLd-CK-MAp"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="B8s-4d-KbA" id="HeY-Fe-S9t"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="navigation" id="5Sh-PP-MuV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zsb-iD-fou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-754.39999999999998" y="-1.3493253373313345"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ConnectWithStrava" width="171" height="31"/>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+        <image name="shs" width="1108" height="684"/>
+    </resources>
+</document>
